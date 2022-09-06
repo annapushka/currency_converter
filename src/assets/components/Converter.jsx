@@ -25,6 +25,10 @@ function Converter() {
         const options = {
             method: 'GET',
             url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/USD',
+            headers: {
+                'X-RapidAPI-Key': `${process.env.REACT_APP_API_KEY_YT}`,
+                'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com'
+            }
         };
 
         axios.request(options).then(function (response) {
