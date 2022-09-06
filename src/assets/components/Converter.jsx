@@ -24,7 +24,7 @@ function Converter() {
     const loadData = () => {
         const options = {
             method: 'GET',
-            url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/USD'
+            url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/USD',
         };
 
         axios.request(options).then(function (response) {
