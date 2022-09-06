@@ -1,0 +1,46 @@
+@import "./general/colors";
+@import "./general/size";
+@import "./general/mixin";
+@import "../components/converter";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: $backWhite;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .converter{
+        height: 60vh;
+        width: 80vw;
+        &__currency {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 1rem;
+            flex: none;
+        }
+        &__switch {
+            transform: rotate(-90deg);
+            &:hover{
+               transform: rotate(-90deg);
+            }
+        }
+        &__input {
+           width: 80%;
+        }
+    }
+    .currency {
+        flex: 1 1 1rem;
+    }
+}
