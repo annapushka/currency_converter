@@ -26,7 +26,7 @@ function Converter() {
             method: 'GET',
             url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/USD',
             headers: {
-                'X-RapidAPI-Key': `${process.env.REACT_APP_API_KEY_YT}`,
+                'X-RapidAPI-Key': process.env.REACT_APP_API_KEY_YT,
                 'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com'
             }
         };
