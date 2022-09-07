@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Result
 
-<p><img src="src/assets/img/readme1.jpg" alt="card-result" width="250px"/></p>
+<p><img src="src/assets/img/readme1.jpg" alt="card-result" width="400px"/></p>
